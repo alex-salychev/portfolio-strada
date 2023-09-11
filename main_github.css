@@ -109,7 +109,7 @@ html {
 /****** KNOW HOW  *****/
 .know-how {
     padding: 135px 135px 150px;
-    background-image: url("https://s3-alpha-sig.figma.com/img/6083/7445/0b8192d8b3f6171a16dbc23ffcca9c13?Expires=1694995200&Signature=jV~orR96bf~yRc~bbsV5v-WdWS7oTIJsYLjW8s9AH2Fy7swfFN9ODZ78wZp~V5oixkeXB0o2jb1WNI7xAK33720FZSDzktyVMXnpLjgeKOy5WGSk0J03FyKVwvKGDXEOgQrehAOxIR12Y0LrQXUVN7IzeAZPiIMahfBvZG37zYAEbS6s8ckqli9nuoAFKrs~z~7LNDH2ecxQFTdJi8AL4EeZhEYH0kt84BwGjo9szhI-Q3MvddVSIMytTAsf0yKSHSNv5HrCYUI6oKCt--I53Gt8oo-UQQQs63lbC-RSWuN3TDbX3K8Co6oEhdWDgL2LppSw3LITEnPvzDRTzKaAHA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    background-image: url("img/background-beach.jpg");
     background-color: bisque;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,10 +132,10 @@ html {
     position: relative;
     padding-top: 35%;
 }
-.skills:nth-child(2n+1) {
+.skills:nth-child(odd) {
     border: 5px solid #D9AA90;
 }
-.skills:nth-child(2n+2) {
+.skills:nth-child(even) {
     border: 5px solid #07203F;
 }
 .skill-html-img,
@@ -172,15 +172,15 @@ html {
     text-transform: uppercase;
     color: #FFF;
 }
-.skills:nth-child(2n+1) .skills-caption {
+.skills:nth-child(odd) .skills-caption {
     background-color: rgba(0, 0, 0, 1);
 }
-.skills:nth-child(2n+2) .skills-caption {
+.skills:nth-child(even) .skills-caption {
     background-color: rgba(217, 170, 144, 1);
 }
 
 .my-projects {
-    padding: 135px 135px 150px;
+    padding: 135px;
     background-color: #07203F;
 }
 .projects-title {
@@ -197,7 +197,7 @@ html {
     gap: 5%;
     margin-bottom: 135px;
 }
-.project-item:nth-child(2n+2)  {
+.project-item:nth-child(even)  {
     flex-direction: row-reverse;
 }
 .project-wrapper-img {
@@ -295,7 +295,7 @@ html {
 /****** CONTACTS  *****/
 .contacts {
     background-color: #3b2ee7;
-    background-image: url("https://s3-alpha-sig.figma.com/img/f4d8/368f/21dcf520c4acf394d42a992466a3d7f9?Expires=1694995200&Signature=T3KyJjwRnh0xgQAF8zahIziirZbprojQieobqDH8PPScubmFiRz0xHljg3PuoMz6V35io2K~uw7Wz2rzI4Gid1JtDr4acvwSW1ebMz8GG7nbsYv4iaHzuk-DfJEc4HFA20EKip2Ut4uCCkjoKV7wcCiBWtjty32NXMOPdRFsOAYWyD4S7ZbazmT7E6D6ID0Js6AEtVai1LnPkZqgkrQRex4qNu9NyIWUjGb1fhxvWrNWhB8fOs1CzSZ~Y1Id8isEW9C8UOrntJ452tukoPdNoxycYRy5a-CzcpfcS-zAeGqjwdj5uznR8G4wDQ7wzE4F7UlfT9Nh64lpgIxkHNebHA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    background-image: url("img/background-blue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 135px 135px 150px;
@@ -320,10 +320,10 @@ html {
     color: white;
     box-shadow: 3px -3px 20px rgb(12, 141, 228);
 }
-.contacts-item:nth-child(2n+1) {
+.contacts-item:nth-child(odd) {
     background-color: #07203f;
 }
-.contacts-item:nth-child(2n+2) {
+.contacts-item:nth-child(even) {
     background-color: #D9AA90;
 }
 .contacts-item-title {
