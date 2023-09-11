@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,300&display=swap');
+* {	padding: 0;	margin: 0;}
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+aside, nav, footer, header, section { display: block; }
+body { line-height: 1; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+body, html { height: 100%; }
+a, a:visited, a:hover { text-decoration: none; }
+ul li { list-style: none; }
+img { vertical-align: top; display: block; }
+h1,h2,h3,h4,h5,h6 { font-weight: inherit; font-size: inherit; }
+input::-ms-clear { display: none; }
+button { background-color: transparent;	cursor: pointer; }
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+/****** HEADER *****/
+html {
+    scroll-behavior: smooth;
+}
+.wrapper {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-main,
+.footer-main {
+    padding: 55px 135px;
+    font-family: Montserrat;
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: rgba(7, 32, 63, 1);
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.wrapper-header,
+.wrapper-footer {
+    display: flex;
+}
+.logo-container {
+    font-weight: 700;
+}
+.nav-main {
+    margin-left: auto;
+}
+.navigation-list {
+    display: inline-flex;
+    gap: 40px;
+    list-style: none;
+}
+.navigation-list a {
+    color: white;
+    text-decoration: underline;
+}
+.navigation-list a:hover {
+    text-decoration: none;
+}
+/****** /HEADER *****/
+
+/****** SECTION DEVELOPER *****/
+.developer {
+    padding: 100px 135px;
+    background-color: rgba(7, 32, 63, 1);
+}
+.wrapper-developer {
+    display: flex;
+    gap: 50px;
+}
+.developer-intro-title {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(217, 217, 217, 1);
+}
+.developer-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.developer-intro-info {
+    line-height: 1.5;
+    font-family: Roboto;
+    font-size: 25px;
+    color: rgba(217, 217, 217, 1);
+}
+.developer-avatar {
+    width: 516px;
+}
+.developer-avatar-img {
+    border-radius: 50%;
+    width: 100%;
+}
+.developer-intro-btn {
+    align-self: flex-start;
+    padding: 30px 75px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-color: rgba(217, 217, 217, 1);
+    color: rgba(0, 0, 0, 1);
+}
+.developer-intro-btn:hover {
+    background-color: rgb(255, 255, 255);
+}
+/****** SECTION /DEVELOPER *****/
+
+/****** KNOW HOW  *****/
+.know-how {
+    padding: 135px 135px 150px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/6083/7445/0b8192d8b3f6171a16dbc23ffcca9c13?Expires=1694995200&Signature=jV~orR96bf~yRc~bbsV5v-WdWS7oTIJsYLjW8s9AH2Fy7swfFN9ODZ78wZp~V5oixkeXB0o2jb1WNI7xAK33720FZSDzktyVMXnpLjgeKOy5WGSk0J03FyKVwvKGDXEOgQrehAOxIR12Y0LrQXUVN7IzeAZPiIMahfBvZG37zYAEbS6s8ckqli9nuoAFKrs~z~7LNDH2ecxQFTdJi8AL4EeZhEYH0kt84BwGjo9szhI-Q3MvddVSIMytTAsf0yKSHSNv5HrCYUI6oKCt--I53Gt8oo-UQQQs63lbC-RSWuN3TDbX3K8Co6oEhdWDgL2LppSw3LITEnPvzDRTzKaAHA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.know-how-title {
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+.skills-wrapper {
+    display: flex;
+    gap: 2%;
+}
+.skills {
+    width: 32%;
+    position: relative;
+    padding-top: 35%;
+}
+.skills:nth-child(2n+1) {
+    border: 5px solid #D9AA90;
+}
+.skills:nth-child(2n+2) {
+    border: 5px solid #07203F;
+}
+.skill-html-img,
+.skill-css-img,
+.skill-js-img  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.skill-html-img {
+    object-position: 60% 75%;
+}
+.skill-css-img {
+    object-position: top left;
+}
+.skill-js-img {
+    object-position: top left;
+}
+.skill-html-caption,
+.skill-css-caption,
+.skill-js-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.skills:nth-child(2n+1) .skills-caption {
+    background-color: rgba(0, 0, 0, 1);
+}
+.skills:nth-child(2n+2) .skills-caption {
+    background-color: rgba(217, 170, 144, 1);
+}
+
+.my-projects {
+    padding: 135px 135px 150px;
+    background-color: #07203F;
+}
+.projects-title {
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+.project-item {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 135px;
+}
+.project-item:nth-child(2n+2)  {
+    flex-direction: row-reverse;
+}
+.project-wrapper-img {
+    position: relative;
+    width: 50%;
+    padding-top: 25%;
+    box-shadow: 3px -3px 20px antiquewhite;
+}
+.project-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-desciption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    width: 45%;
+    line-height: 1.25;
+}
+.project-desciption-title {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #D9D9D9;
+}
+.project-desciption-caption {
+    font-family: Roboto;
+    font-size: 30px;
+    color: #D9D9D9;
+}
+/****** /KNOW HOW  *****/
+
+/****** REQUEST FORM  *****/
+.request {
+    background: #EADED4;
+    padding: 135px 135px 150px;
+}
+.wrapper-request {
+    text-align: center;
+    width: 80%;
+}
+.request-title {
+    margin-bottom: 70px;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #333;
+}
+.request-form {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 65px;
+    background-color: #FFF;
+}
+.request-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+.request-form-fields input {
+    padding: 30px 35px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    background: rgba(234, 222, 212, 0.35);
+}
+.request-form-fields input:focus {
+    outline: 1px solid black;
+}
+.request-form-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 25%;
+}
+.request-form-btns input {
+    flex-grow: 1;
+    padding: 16px 25px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgba(234, 222, 212, 0.80);
+    cursor: pointer;
+}
+/****** /REQUEST FORM  *****/
+
+/****** CONTACTS  *****/
+.contacts {
+    background-color: #3b2ee7;
+    background-image: url("https://s3-alpha-sig.figma.com/img/f4d8/368f/21dcf520c4acf394d42a992466a3d7f9?Expires=1694995200&Signature=T3KyJjwRnh0xgQAF8zahIziirZbprojQieobqDH8PPScubmFiRz0xHljg3PuoMz6V35io2K~uw7Wz2rzI4Gid1JtDr4acvwSW1ebMz8GG7nbsYv4iaHzuk-DfJEc4HFA20EKip2Ut4uCCkjoKV7wcCiBWtjty32NXMOPdRFsOAYWyD4S7ZbazmT7E6D6ID0Js6AEtVai1LnPkZqgkrQRex4qNu9NyIWUjGb1fhxvWrNWhB8fOs1CzSZ~Y1Id8isEW9C8UOrntJ452tukoPdNoxycYRy5a-CzcpfcS-zAeGqjwdj5uznR8G4wDQ7wzE4F7UlfT9Nh64lpgIxkHNebHA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 135px 135px 150px;
+    text-align: center;
+}
+.contacts-title {
+    margin-bottom: 70px;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    /*color: #333;*/
+}
+.contacts-list {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-item {
+    width: 30%;
+    padding: 10% 4%;;
+    color: white;
+    box-shadow: 3px -3px 20px rgb(12, 141, 228);
+}
+.contacts-item:nth-child(2n+1) {
+    background-color: #07203f;
+}
+.contacts-item:nth-child(2n+2) {
+    background-color: #D9AA90;
+}
+.contacts-item-title {
+    margin-bottom: 25px;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.contacts-item-link {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 45px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase; 
+    color: #000;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 50px;
+}
+.contacts-item-link:hover {
+    background-color: rgb(253, 253, 253);
+}
+/****** /CONTACTS  *****/
+
+/****** FOOTER  *****/
+.navigation-list li:nth-child(2) {
+    order: -1;
+}
