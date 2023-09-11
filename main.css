@@ -109,7 +109,7 @@ html {
 /****** KNOW HOW  *****/
 .know-how {
     padding: 135px 135px 150px;
-    background-image: url("img/background-beach.jpg");
+    background-image: url("background-beach.jpg");
     background-color: bisque;
     background-repeat: no-repeat;
     background-size: cover;
@@ -295,7 +295,7 @@ html {
 /****** CONTACTS  *****/
 .contacts {
     background-color: #3b2ee7;
-    background-image: url("img/background-blue.jpg");
+    background-image: url("background-blue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 135px 135px 150px;
